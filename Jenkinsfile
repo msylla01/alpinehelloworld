@@ -113,10 +113,10 @@ pipeline {
      
        post {
        success {
-         slackSend (color: '#00FF00', message: " Sylla-SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+         slackSend (color: '#00FF00', message: " msylla-SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
          }
       failure {
-            slackSend (color: '#FF0000', message: "Sylla-FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+            slackSend (color: '#FF0000', message: "msylla-FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
           }   
     }
 }
