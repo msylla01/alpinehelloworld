@@ -9,7 +9,6 @@ def hello():
     return 'Hello world!'
 def maxi(np):
     return np**2
-retru
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
